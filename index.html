@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adventure</title>
+<link rel="shortcut icon" href="Image/icon/glob.png" type="image/x-icon">
+<link href="CSS/css.css" rel="stylesheet" type="text/css"/>
+<link href="CSS/Tips.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<meta http-equiv="Content-type" content="text/html"; charset="utf-8">
+<meta http-equiv="Content-language" content="ru">
+</head>
+<style>
+  body { background: url(Image/backImages/background.jpg); }
+</style>
+<body>
+<div class="ten">Добро пожаловать!</div>
+<div class="en">Выберите куда хотите перейти:</div><br>
+<br>
+<br>
+<br>
+<div id="nnn">
+	<nav>
+	<a href="Pages/france.html"><img src="Image/country/fr_main.png" width=35% class="fade"></a>
+	<a href="Pages/germany.html"><img src="Image/country/ger_main.png" width=27% class="fade"></a>
+	<a href="Pages/italy.html"><img src="Image/country/it_main.png" width=34% class="fade"></a>
+	</nav>
+</div>
+<div class="dropdown">
+	<button class="mainmenubtn">Нажми на меня!</button>
+	<div class="dropdown-child">
+		<br>
+		<p>Введите интенсивность</p>
+		<input id="max">
+		<p>Введите скорость</p>
+		<input id="speed">
+		<button class="button" onclick=change()><span>Подтвердить!</span></button>
+	</div>
+</div>
+<script src="JavaScript/SnowScript.js"></script>
+<script>
+	function change() {
+		window.location="index.html?max="+max.value+"&speed="+speed.value;
+	}
+</script>
+</body>
+</html>
