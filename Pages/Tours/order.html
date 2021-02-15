@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/> 
+<meta name="author" content="author"/>
+<link rel="stylesheet" type="text/css" href="../../CSS/style.css" media="screen"/>
+<title>Заказ тура</title>
+</head>
+<body class="bg_order">
+<div class="form_position">
+<div class="form_info">
+	<p id="Country"></p>
+	<p id="City"></p>
+	<p id="Tour"></p>
+	<p id="Price"></p>
+</div><br>
+		<form>
+			<div>
+				<label>Ф.И.О.</label>
+				<input type="text" placeholder="Иванов Иван Иванович" id="Name"><br><br>
+
+				<label>Домашний адресс</label>
+				<input type="text" placeholder="пр. Победы, хх, кв. хх" id="Home"><br><br>
+
+				<label>Электронная почта</label>
+				<input type="email" placeholder="lolkek@gmail.com" id="Email"><br>
+				<div id="errorEmail"></div>
+
+				<label>Моб. телефон</label>
+				<input type="tel" placeholder="+380(00)000-00-00" id="Phone"><br>
+				<div id="errorPhone"></div>
+				<br>
+				<label>Дата начала тура</label>
+				<input type="date" max="2021-06-10" min="2020-06-15">
+				<br>
+				<br>
+				<label>Кол-во человек</label>
+				<input type="text" placeholder="2" id="Human"><br>
+				<br>
+
+				<label>Ссылка на инстаграмм</label>
+				<input type="url" placeholder="https://www.instagram.com/klukovvvvvvvka/?hl=ru" id="inst"><br><br><br>
+
+				<label>Номер карты</label>
+				<input type="text" placeholder="хххх хххх хххх хххх" id="Card"><br><br>
+
+				<label>Срок действия</label>
+				<select name="srok_month">
+					<option value=0>XX</option>
+					<option value=1>1</option>
+					<option value=2>2</option>
+					<option value=3>3</option>
+					<option value=4>4</option>
+					<option value=5>5</option>
+					<option value=6>6</option>
+					<option value=7>7</option>
+					<option value=8>8</option>
+					<option value=9>9</option>
+					<option value=10>10</option>
+					<option value=11>11</option>
+					<option value=12>12</option>
+				</select>
+
+				<select name="srok_year">
+					<option value=0>XX</option>
+					<option value=1>20</option>
+					<option value=2>21</option>
+					<option value=3>22</option>
+					<option value=4>23</option>
+					<option value=5>24</option>
+					<option value=6>25</option>
+					<option value=7>26</option>
+				</select>
+				<br><br>
+
+				<label>Код CVV2/CVC2</label>
+				<input type="text" placeholder="ххх" id="Code"><br><br>
+
+
+				<label>Отправить чек на почту?</label>
+				<ul>
+					<li>
+						<label><input type="radio" name="check">Да</label>
+					</li>
+					<li>
+						<label><input type="radio" name="check">Нет</label>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<label>Готово?</label>
+				<button type="submit" id="Send">Отправить</button>
+				<a href="../../index.html"><button type="reset" id="Cansel">Сбросить</button></a>
+			</div>
+		</form>	
+</div>
+<script src="https://unpkg.com/imask"></script>
+<script src="../../JavaScript/orderScript.js"></script>
+<script src="../../JavaScript/orderMaskScript.js"></script>
+<script>
+    Phone.onblur = function() {
+        if (!Phone.value.includes('+380')) {
+            Phone.classList.add('invalid');
+            errorPhone.innerHTML = 'Пожалуйста, введите правильный телефон.';
+        }
+    };
+
+    Phone.onfocus = function() {
+        if (this.classList.contains('invalid')) {
+            // удаляем индикатор ошибки, т.к. пользователь хочет ввести данные заново
+            this.classList.remove('invalid');
+            errorPhone.innerHTML = "";
+        }
+    };
+    Email.onblur = function() {
+        if (!Email.value.includes('@')) { 
+            Email.classList.add('invalid');
+            errorEmail.innerHTML = 'Пожалуйста, введите правильный email';
+        }
+    };
+
+    Email.onfocus = function() {
+        if (this.classList.contains('invalid')) {
+            // удаляем индикатор ошибки, т.к. пользователь хочет ввести данные заново
+            this.classList.remove('invalid');
+            errorEmail.innerHTML = "";
+        }
+    };
+</script>
+</body>
+</html>
