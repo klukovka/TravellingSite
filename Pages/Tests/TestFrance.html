@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="description"/>
+    <meta name="keywords" content="keywords"/>
+    <meta name="author" content="author"/>
+    <link rel="stylesheet" type="text/css" href="../../CSS/default.css" media="screen"/>
+    <title>Тест о Франции</title>
+</head>
+<body>
+<div><marquee>Проверьте, насколько хорошо вы знаете Францию!</marquee></div>
+<div class="top">
+    <header>
+    <div class="header">
+        <img src="../img/flag_fr.jpg" width=780px height=150px>
+    </div>
+    </header>
+</div>
+<div class="container">	<div class="inner_copy"></div>
+    <div class="navigation">
+		<nav>
+        <a href="TestFrance.html"> Тест о Франции </a>
+        <a href="TestGermany.html"> Тест о Германии </a>
+        <a href="TestItaly.html"> Тест об Италии </a>
+        <a href="../geoposition.html"> О нас </a>
+            <a href="../eventsTable.html"> Доска объявлений </a>
+		</nav>
+        <div class="clearer"><span></span></div>
+    </div>
+<main>
+    <div class="main">
+        <div class="content">
+            <h1>Насколько хорошо вы знаете Францию?</h1>
+            <h2>1. Выберите столицу Франции</h2><hr><br>
+            <img src="image/f1.jpeg" width="530" height="350"><br>
+            <label id="q11"><input type="radio" name="capital" id="capital_1">Париж</label><br>
+            <label id="q12"><input type="radio" name="capital" id="capital_2">Лион</label><br>
+            <label id="q13"><input type="radio" name="capital" id="capital_3">Марсель</label><br>
+            <label id="q14"><input type="radio" name="capital" id="capital_4">Тулуза</label><br>
+
+            <h2>2. Самая высокая точка</h2><hr><br>
+            <img src="image/f2.jpg" width="530" height="350"><br>
+            <label id="q21"><input type="radio" name="mountain" id="mountain_1">Виньмаль</label><br>
+            <label id="q22"><input type="radio" name="mountain" id="mountain_2">Пьюи де Дом</label><br>
+            <label id="q23"><input type="radio" name="mountain" id="mountain_3">Монблан</label><br>
+            <label id="q24"><input type="radio" name="mountain" id="mountain_4">Донон</label><br>
+
+            <h2>3. Самая длинная река</h2><hr><br>
+            <img src="image/f3.jpg" width="530" height="350"><br>
+            <label id="q31"><input type="radio" name="river" id="river_1">Сена</label><br>
+            <label id="q32"><input type="radio" name="river" id="river_2">Луара</label><br>
+            <label id="q33"><input type="radio" name="river" id="river_3">Рона</label><br>
+            <label id="q34"><input type="radio" name="river" id="river_4">Гаронна</label><br>
+
+            <h2>4. Выберите нынешнего президента</h2><hr><br>
+            <img src="image/f41.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f42.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f43.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f44.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <br>
+            <label id="q41"><input type="radio" name="president" id="president_1">Эммануэль Макрон</label><br>
+            <label id="q42"><input type="radio" name="president" id="president_2">Эдуар Филипп</label><br>
+            <label id="q43"><input type="radio" name="president" id="president_3">Франсуа Олланд</label><br>
+            <label id="q44"><input type="radio" name="president" id="president_4">Николя Саркози</label><br>
+
+            <h2>5. В какой отрасли стали известны братья Люмьер?</h2><hr><br>
+            <img src="image/f5.jpg" width="530" height="350"><br>
+            <label id="q51"><input type="radio" name="famous" id="famous_1">Музыка</label><br>
+            <label id="q52"><input type="radio" name="famous" id="famous_2">Живопись</label><br>
+            <label id="q53"><input type="radio" name="famous" id="famous_3">Театр</label><br>
+            <label id="q54"><input type="radio" name="famous" id="famous_4">Кинематограф</label><br>
+
+            <h2>6. Выберите французских актеров</h2><hr><br>
+            <img src="image/f61.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f62.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f63.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f64.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <br>
+            <label id="q61"><input type="checkbox" name="actor" id="actor_1">Жан Рено</label><br>
+            <label id="q62"><input type="checkbox" name="actor" id="actor_2">Бенедикт Камбербэтч</label><br>
+            <label id="q63"><input type="checkbox" name="actor" id="actor_3">Жерар Депардье</label><br>
+            <label id="q64"><input type="checkbox" name="actor" id="actor_4">Пьер Ришар</label><br>
+
+            <h2>7. Выберите национальные франузские блюда/напитки</h2><hr><br>
+            <img src="image/f71.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f72.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f73.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f74.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <br>
+            <label id="q71" ><input type="checkbox" name="dish" id="dish_1">Пицца</label><br>
+            <label id="q72" ><input type="checkbox" name="dish" id="dish_2">Шампанское</label><br>
+            <label id="q73" ><input type="checkbox" name="dish" id="dish_3">Круассаны</label><br>
+            <label id="q74" ><input type="checkbox" name="dish" id="dish_4">Рататуй</label><br>
+
+            <h2>8. Выберите французских певиц</h2><hr><br>
+            <img src="image/f81.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f82.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f83.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f84.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <br>
+            <label id="q81" ><input type="checkbox" name="singer" id="singer_1">Лара Фабиан</label><br>
+            <label id="q82"><input type="checkbox" name="singer" id="singer_2">Эдит Пиаф</label><br>
+            <label id="q83"><input type="checkbox" name="singer" id="singer_3">Патрисия Каас</label><br>
+            <label id="q84"><input type="checkbox" name="singer" id="singer_4">Лана Дель Рей</label><br>
+
+            <h2>9. Выберите французских писателей</h2><hr><br>
+            <img src="image/f91.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f92.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f93.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f94.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <br>
+            <label id="q91"><input type="checkbox" name="literature" id="literature_1">Виктор Гюго</label><br>
+            <label id="q92"><input type="checkbox" name="literature" id="literature_2">Жан де Лафонтен</label><br>
+            <label id="q93"><input type="checkbox" name="literature" id="literature_3">Льюис Кэрролл</label><br>
+            <label id="q94"><input type="checkbox" name="literature" id="literature_4">Агата Кристи</label><br>
+
+            <h2>10. Выберите французские бренды</h2><hr><br>
+            <img src="image/f101.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f102.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f103.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <img src="image/f104.jpg" width="100px" height="100px" onclick="changeSizeImage(this)">
+            <br>
+            <label id="q101"><input type="checkbox" name="brend" id="brend_1">Loreal</label><br>
+            <label id="q102"><input type="checkbox" name="brend" id="brend_2">Chanel</label><br>
+            <label id="q103"><input type="checkbox" name="brend" id="brend_3">Renault</label><br>
+            <label id="q104"><input type="checkbox" name="brend" id="brend_4">Peugeot</label><br>
+            <br>
+            <br>
+            <br>
+
+            <button class="Result" id="resultButton">Результат!</button>
+
+        </div>
+        <div class="sidenav">
+            <h2 id="res"></h2>
+            <ul>
+            <h2 id="result"></h2>
+            </ul>
+            <h2>Другие города</h2>
+            <ul>
+                <h2>Франция</h2>
+				<nav>
+                <li><a href="../paris.html">Париж</a></li>
+                <li><a href="../lyon.html">Лион</a></li>
+				</nav>
+                <h2>Германия</h2>
+				<nav>
+                <li><a href="../berlin.html">Берлин</a></li>
+                <li><a href="../bayern.html">Бавария</a></li>
+				</nav>
+                <h2>Италия</h2>
+				<nav>
+                <li><a href="../rome.html">Рим</a></li>
+                <li><a href="../venez.html">Венеция</a></li>
+                    <canvas id="c"></canvas>
+
+                </nav>
+            </ul>
+        </div>
+        <div class="clearer"><span></span></div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="left">&copy; 2020 </div>
+        <div class="right"></div>
+        <div class="center"></div>
+        <div class="clearer"><span></span></div>
+    </div>
+</footer>
+</div>
+<div class="scrollUp">
+    <button class="up" id="upButton">Наверх</button>
+</div>
+<script src="../../JavaScript/TestScript.js"></script>
+<script src="../../JavaScript/ScrollAnimation.js"></script>
+<script src="../../JavaScript/canvasScript.js"></script>
+
+</body>
+</html>
