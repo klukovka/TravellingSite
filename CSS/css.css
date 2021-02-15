@@ -1,0 +1,117 @@
+/*index*/
+.ten{ 
+font-size:100px;
+color:black;
+text-align:center;	
+}
+.en{
+font-size:40px;
+color:black;
+text-align:center;	
+}
+#nnn{
+position:center;
+}
+.fade{
+ opacity:1;
+}
+.fade:hover{
+ opacity:0.7;
+ }
+
+/*общее*/
+.grow:hover{
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+}
+.wrapper {
+margin-left:15%;
+margin-top:7%;
+width:100%;
+}
+.left_block{
+font-size:400%;
+color:#90EE90;
+font-family:camry;
+float:left;
+width:50%;
+}
+.right_block{
+font-size:400%;
+color:#90EE90;
+font-family:camry;
+float:right;
+width:50%;
+}
+/*france*/
+.fon_page1{
+background-image:url(../Image/backImages/fon_fr.jpg);
+background-attachment:fixed;	
+background-size:100%;
+}
+.block1{
+position: relative;
+top: 20%;
+left: 43%;
+margin: -125px 0 0 -125px;
+text-align:center;	
+font-size:80px;
+font-family:arial;
+width:330px;	
+height:100px;
+border:solid 18px;
+text-align:center;
+border-color:white red white blue;
+border-radius:50px 0;
+top:150px;
+}	
+
+
+/*germany*/
+.fon_page2{
+background-image:url(../Image/backImages/fon_ger.jpg);	
+background-attachment:fixed;
+background-size:100%;
+}
+.block2{
+position: relative;
+top: 20%;
+left: 43%;
+margin: -125px 0 0 -125px;
+text-align:center;	
+font-size:80px;
+font-family:arial;
+width:370px;	
+height:100px;
+border:solid 18px;
+text-align:center;
+border-color:black red yellow red;
+border-radius:50px 0;
+top:150px;
+}	
+
+/*italy*/
+.fon_page3{
+background-image:url(../Image/backImages/fon_it.jpg);	
+background-attachment:fixed;
+background-size:100%;
+}
+.block3{
+position: relative;
+top: 20%;
+left: 43%;
+margin: -125px 0 0 -125px;
+text-align:center;	
+font-size:80px;
+font-family:arial;
+width:370px;	
+height:100px;
+border:solid 18px;
+text-align:center;
+border-color:white red white green;
+border-radius:50px 0;
+top:150px;
+}
+
+
